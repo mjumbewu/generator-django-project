@@ -45,6 +45,9 @@ var DjangoProjectGenerator = yeoman.generators.Base.extend({
 
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
+
+    // Python requirements
+    this.copy('requirements.txt', 'requirements.txt');
   },
 
   projectfiles: function () {
